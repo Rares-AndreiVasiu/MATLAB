@@ -48,8 +48,8 @@ else
     
         augA(i, :) = augA(i, :) / pivot_element;
         
-        % Step 3d: Eliminate the other elements in the current column
-        for j = 1:n
+        % Cancel out other elements in the current column
+        for j = 1 : n
             if j ~= i
                 factor = augA(j, i);
     
